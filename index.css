@@ -3,12 +3,11 @@
 }
 
 body {
-    background-color: #ECE6DA;
-     
+    background-color: #ECE6DA;  
 }
 
 #header {
-    background-image: url('Images/feathers.png');
+    background-image: url('images/feathers.png');
     background-repeat: repeat;  
     width: 100%;
     height: 100px;
@@ -16,8 +15,7 @@ body {
 
 #latestprojects {
     border: none;
-    padding: 50px;
-    
+    padding: 50px;  
 }
 
 .project {
@@ -33,7 +31,7 @@ body {
 }
 
 #footer {
-    background-image: url('Images/feathers.png');
+    background-image: url('images/feathers.png');
     background-repeat: repeat;  
     width: 100%;
     height: 50px;
@@ -71,4 +69,3 @@ a {
     font-family: 'Amatic SC';
     text-align: center;
 }
-
