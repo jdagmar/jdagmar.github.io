@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cambay:400,400i,700|Open+Sans+Condensed:300,300i|Syncopate:400,700" rel="stylesheet">    
+    <title>jdagmar</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- flexbox, fixed nav? BEM -->
+        <!-- smooth scroll, viewheight... -->
+        <div class="header__logo-container">
+            <h1 class="header__logo">jdagmar</h1>
+
+            <!-- undersidor, för lång scroll vid många projekt -->
+            <!-- anchortag i projektsidorna -->
+            <nav class="nav">
+                <ul class="nav-menu">
+                        <li class="nav-menu__list-item"><a class="nav-menu__link" href=".">Home</a></li>                                                
+                    <li class="nav-menu__list-item"><a class="nav-menu__link" href="hobby.html">Hobby</a></li>
+                    <li class="nav-menu__list-item"><a a class="nav-menu__link" href="study.html">Study</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- media queries -->
+    <!-- label istället för tag? statiska? -->
+
+    <main>
+
+        <div class="main__hobby main__project-container">
+            <h2 class="main__page-header">Hobby projects</h2>
+            <div class="main__project">
+                <div class="main__project-header">
+                    <h3 class="main__project-title">Mangolian</h3>
+                </div>
+                <a href="https://jdagmar.github.io/mangolian/"><img class="main__project-image" src="images/mangolian.png"></a>
+                <p class="main__project-info">Hobby project focused on trying out modal dialogue.</p>
+                <p class="main__project-tags">Used techniques: HTML, CSS, JS </p>
+            </div>
+            <div class="main__project">
+                <div class="main__project-header">
+                    <h3 class="main__project-title">kattja</h3>
+                </div>
+                <a href="https://jdagmar.github.io/kattja/"><img class="main__project-image" src="images/kattja.png"></a>
+                <p class="main__project-info">My first real project after learning basic web development.</p>
+                <p class="main__project-tags">Used techniques: CSS, HTML, JS</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p id="footer__copy">&copy; Jessica Gustavsson 2017</p>
+        </div>
+    </main>
+</body>
+
+</html>
