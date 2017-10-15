@@ -1,71 +1,117 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+        
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cambay:400,400i,700|Open+Sans+Condensed:300,300i|Syncopate:400,700" rel="stylesheet">
+    <meta name="description" content="Jessica Gustavssons portfolio">
     <title>jdagmar</title>
 </head>
 
 <body>
-
-    <div class="header">
-        <!-- flexbox, fixed nav? BEM -->
-        <!-- smooth scroll, viewheight... -->
-        <div class="header__logo-container">
-            <h1 class="header__logo">jdagmar</h1>
-
-            <!-- undersidor, för lång scroll vid många projekt -->
-            <!-- anchortag i projektsidorna -->
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="nav-menu__list-item"><a class="nav-menu__link" href=".">Home</a></li>
-                    <li class="nav-menu__list-item"><a class="nav-menu__link" href="hobby.html">Hobby</a></li>
-                    <li class="nav-menu__list-item"><a a class="nav-menu__link" href="study.html">Study</a></li>
+    <header>
+        <div class="header__container">
+            <h1 class="header__logo">Jdagmar</h1>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__dropdown-container">
+                        <div class="menu__list-item">
+                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">Work</a>
+                        </div>
+                        <ul id="dropdown-menu__content" id="show-dropdown">
+                            <li class="dropdown-menu__list-item">
+                                <a class="dropdown-menu__link" href="hobby.html">Hobby</a>
+                            </li>
+                            <li class="dropdown-menu__list-item">
+                                <a class="dropdown-menu__link" href="study.html">Study</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__link" href="/">Home</a>
+                    </li>
                 </ul>
             </nav>
         </div>
-
-    </div>
-
-    <!-- media queries -->
-    <!-- label istället för tag? statiska? -->
+    </header>
 
     <main>
+        <div class="project-container">
+            <h2 class="page-header">Study projects</h2>
+            <div class="project">
+                <div class="project__inner-container">
+                    <div class="image-container">
+                        <a href="https://jdagmar.github.io/elixir-juice-bar/">
+                            <img class="project-image"
+                            alt="screenshot from elixir juice bar's front-page"
+                            src="images/elixirjuicebar.png">
+                        </a>
+                    </div>
 
-        <div class="main__study main__project-container">
-            <h2 class="main__page-header">School projects</h2>
-            <a name="study"></a>
-            <div class="main__project">
-                <div class="main__project-header">
-                    <h3 class="main__project-title">Fox-o-pedia</h3>
+                    <div class="text-container">
+                        <h3 class="project-title">Elixir juice bar</h3>
+                        <p class="project-info">
+                            Final school project in HTML/CSS course. 
+                            The website was made to pitch a idea from a graphic profile.
+                        </p>
+                        <p class="project-tags">
+                            Used techniques: CSS, HTML, media queries, Bootstrap, flexbox, JS
+                        </p>
+                    </div>
                 </div>
-                <a href="https://jdagmar.github.io/foxopedia/"><img class="main__project-image" src="images/foxopedia.png"></a>
-                <p class="main__project-info">School assignment focused on mimic a specific layout.</p>
-                <p class="main__project-tags">Used techniques: HTML, CSS</p>
             </div>
-            <div class="main__project">
-                <div class="main__project-header">
-                    <h3 class="main__project-title">The Daily Succulent</h3>
-                </div>
-                <a href="https://jdagmar.github.io/the-daily-succulent/"><img class="main__project-image" src="images/thedailysucculent.png"></a>
-                <p class="main__project-info">School assignment focused on learning media queries.</p>
-                <p class="main__project-tags">Used techniques: CSS, HTML, media queries, flex-box</p>
-            </div>
-            <div class="main__project">
-                <div class="main__project-header">
-                    <h3 class="main__project-title">Elixir Juice Bar</h3>
-                </div>
-                <a href="https://jdagmar.github.io/elixir-juice-bar/"><img class="main__project-image" src="images/elixirjuicebar.png"></a>
-                <p class="main__project-info">Final school project focused on all of "used techniques" above.</p>
-                <p class="main__project-tags">Used techniques: CSS, HTML, media queries, Bootstrap, flexbox, JS</p>
-            </div>
-        </div>
 
-        <div id="footer">
-            <p id="footer__copy">&copy; Jessica Gustavsson 2017</p>
-        </div>
-    </main>
+                <div class="project">
+                    <div class="project__inner-container">
+                        <div class="image-container">
+                            <a href="https://jdagmar.github.io/the-daily-succulent/">
+                                <img class="project-image"
+                                alt="Screenshot from Daily succulent's front-page"
+                                src="images/thedailysucculent.png">
+                            </a>
+                        </div>
+
+                        <div class="text-container">
+                            <h3 class="project-title">The daily succulent</h3>
+                            <p class="project-info">
+                                School assignment focused on learning media queries.
+                            </p>
+                            <p class="project-tags">
+                                Used techniques: CSS, HTML, media queries, flex-box
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__inner-container">
+                        <div class="image-container">
+                            <a href="https://jdagmar.github.io/foxopedia/">
+                                <img class="project-image"
+                                alt="screenshot from foxopedia front-page"
+                                src="images/foxopedia.png">
+                            </a>
+                        </div>
+                        <div class="text-container">
+                            <h3 class="project-title">Fox-o-pedia</h3>
+                            <p class="project-info">
+                                School assignment focused on mimic a specific layout.
+                            </p>
+                            <p class="project-tags">
+                                Used techniques: HTML, CSS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+<footer>
+    <p class="footer__copy">&copy; Jessica Gustavsson 2017</p>
+</footer>
+      
+<script src="landingpage.js"></script>
+
 </body>
-
 </html>
