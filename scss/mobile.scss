@@ -126,7 +126,6 @@ header {
     padding: 10px;
     border: 1px solid white;
     box-shadow: 1px 1px 1px #c9c9c9;
-    width: 800px;
     position: relative;
 }
 
@@ -145,13 +144,22 @@ header {
     font-size: 2rem;
     font-family: 'Khula';
     text-align: center;  
+    font-weight: lighter;
 }
 
 .project-info {
     font-size: 0.8rem;
     font-family: 'Khula';
     padding: 5px;
-    text-align: left;
+    text-align: justify;
+}
+
+.project-info__link {
+    text-decoration: none;
+    color: #636343;
+    position: absolute;
+    top: 238px;
+    right: 15px;
 }
 
 .project-tags {
