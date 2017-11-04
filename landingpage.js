@@ -20,3 +20,13 @@ function closeDropdown (event) {
 }
 
 window.addEventListener("click", closeDropdown)
+
+function toggleMobileNav () {
+    var hamburgerMenu = document.getElementById("hamburger__nav");
+
+    if (hamburgerMenu.classList.contains("show-hamburger-menu")){
+        hamburgerMenu.classList.remove("show-hamburger-menu")
+    } else {
+        hamburgerMenu.classList.add("show-hamburger-menu");
+    }
+}
