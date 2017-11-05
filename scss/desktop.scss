@@ -26,6 +26,11 @@ header {
     font-size: 2.5rem;
 }
 
+.hamburger-list {
+    display: none;
+}
+
+
 .menu {
     display: block;
 }
@@ -166,23 +171,6 @@ header {
     font-family: 'Khula';
     padding: 5px;
     text-align: justify;
-}
-
-.project-info__link {
-    text-decoration: none;
-    color: #636343;
-    position: absolute;
-    top: 238px;
-    right: 15px;
-}
-
-.project-tags {
-    font-size: 0.9rem;
-    font-family: 'Open Sans Condensed';
-    padding: 5px;
-    font-style: italic;
-    position: absolute;
-    bottom: 10px;
 }
 
 .project-title {
