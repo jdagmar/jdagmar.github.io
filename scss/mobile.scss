@@ -51,29 +51,51 @@ button {
 }
 
 .hamburger-list {
+    margin-bottom: 10px;
     padding: 0px;
+    background-image: url('../images/background.png');
 }
 
 .hamburger__list-item {
-    margin: 5px;
-    border: 1px solid #ccc;
+    padding: 5px;
     list-style: none;
     font-family: 'Cambay';
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
 
     &:hover {
-        background-color:  #999967;
+        background-color: #ddd;
+        opacity: 0.8;
     }
+    &:active {
+        background-color: transparent;
+    }
+}
+
+.hamburger__list-item--top-margin {
+    margin-top: 0px;
 }
 
 .hamburger__list-item--margin {
     margin-bottom: 0px;
 }
 
+.hamburger__list-item--border {
+    margin: 10px 0px 0px 15px;
+    border: none;
+    font-size: 0.9rem;
+    text-align: left;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
 .hamburger__link {
+    margin-left: 25px;
     text-decoration: none;
     color: black;
+    display: block;
 }
 
 .show-nav {
@@ -107,7 +129,6 @@ button {
 .project {
     text-align: center;
     margin-top: 10px;
-    padding: 10px;
     border: 1px solid white;
     box-shadow: 1px 1px 1px #c9c9c9;
     position: relative;
@@ -115,7 +136,6 @@ button {
 
 .project--index {
     align-items: stretch;
-    
 }
 
 .footer__copy {
@@ -133,6 +153,7 @@ button {
 }
 
 .project-info {
+    margin: 5px;
     font-size: 0.8rem;
     font-family: 'Khula';
     text-align: left;
@@ -145,14 +166,15 @@ button {
 }
 
 .project-tags {
+    margin: 5px;
     font-size: 0.9rem;
     font-family: 'Open Sans Condensed';
     font-style: italic;
-    margin-top: 10px;
     text-align: left;
 }
 
 .project-title {
+    margin-top: 5px;
     font-size: 1.2rem;
     font-family: 'Khula';
     text-align: center;
@@ -167,7 +189,6 @@ button {
 }
 
 .text-container {
-    margin: 10px;
     flex: 50%;
     vertical-align: top;
     text-align: center;
