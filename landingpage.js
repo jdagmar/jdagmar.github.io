@@ -28,5 +28,14 @@ function toggleMobileNav () {
         hamburgerMenu.classList.remove("show-hamburger-menu")
     } else {
         hamburgerMenu.classList.add("show-hamburger-menu");
+        event.stopPropagation();
     }
 }
+
+function closeMobileNav (event) {
+    var hamburgerMenu = document.getElementById("hamburger__nav");
+
+    hamburgerMenu.classList.remove("show-hamburger-menu");
+}
+
+window.addEventListener("click", closeMobileNav)
