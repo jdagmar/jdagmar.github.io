@@ -11,18 +11,25 @@
 
 <body>
     <header>
-
         <div class="mobile-menu">
-                <h1 class="mobile-menu__logo">Jdagmar</h1>
-                <img class="hamburger-icon" onclick="toggleMobileNav();" src="images/hamburger-icon.svg"/> 
-            </div>
-            <div class="hamburger" id="hamburger__nav">
-                <ul class="hamburger-list">
-                    <li class="hamburger__list-item"><a class="hamburger__link" href="/">Home</a></li>                                                            
-                    <li class="hamburger__list-item"><a class="hamburger__link" href="hobby.html">Hobby</a></li>
-                    <li class="hamburger__list-item"><a class="hamburger__link" href="study.html">Study</a></li>
-                </ul>
-            </div>
+            <h1 class="mobile-menu__logo">Jdagmar</h1>
+            <button onclick="toggleMobileNav();">
+                <img aria-label="open/close menu" class="hamburger-icon" src="images/hamburger-icon.svg"/>
+            </button>
+        </div>
+        <div class="hamburger" id="hamburger__nav">
+            <ul class="hamburger-list">
+                <li class="hamburger__list-item">
+                    <a class="hamburger__link" href="/">Home</a>
+                </li>                                    
+                <li class="hamburger__list-item">
+                    <a class="hamburger__link" href="hobby.html">Hobby</a>
+                </li>
+                <li class="hamburger__list-item hamburger__list-item--margin">
+                    <a class="hamburger__link" href="study.html">Study</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="header__container">
             <h1 class="header__logo">Jdagmar</h1>
