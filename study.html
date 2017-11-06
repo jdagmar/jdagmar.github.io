@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Jessica Gustavssons portfolio">
+    <meta name="description" content="Jessica Gustavssons Projects">
     <title>jdagmar</title>
 </head>
 
@@ -40,7 +40,7 @@
                 <ul class="menu__list">
                     <li class="menu__dropdown-container">
                         <div class="menu__list-item">
-                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">Work</a>
+                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">Projects</a>
                         </div>
                         <ul id="dropdown-menu__content" id="show-dropdown">
                             <li class="dropdown-menu__list-item">
@@ -62,9 +62,54 @@
     <main>
         <div class="project-container">
             <h2 class="page-header">Study projects</h2>
+
             <div class="project">
-                <a name="elixir"></a>
-                <a name="succulent"></a>
+                <div class="project__inner-container">
+                    <div class="image-container">
+                        <a href="https://github.com/jdagmar/todo">
+                            <img class="project-image"
+                            alt="Screenshot from todo list app"
+                            src="images/todo.png">
+                        </a>
+                    </div>
+
+                    <div class="text-container">
+                        <h3 class="project-title">The Todo List</h3>
+                        <p class="project-info">
+                            A todo list app using PHP and MySql. Notice that the database
+                            used is not included in github code. 
+                        </p>
+                        <p class="project-tags">
+                            Used techniques: HTML, CSS, PHP, MySql
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project__inner-container">
+                    <div class="image-container">
+                        <a href="https://github.com/jdagmar/dunder-mifflin">
+                            <img class="project-image"
+                            alt="Screenshot from the dunder mifflin webshop"
+                            src="images/dunder-mifflin.png">
+                        </a>
+                    </div>
+
+                    <div class="text-container">
+                        <h3 class="project-title">Dunder Mifflin Shop</h3>
+                        <p class="project-info">
+                            A small webshop in order to learn basic PHP with The Office UK inspired
+                            design.
+                        </p>
+                        <p class="project-tags">
+                            Used techniques: HTML, CSS, PHP
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">              
                 <div class="project__inner-container">
                     <div class="image-container">
                         <a href="https://jdagmar.github.io/elixir-juice-bar/">

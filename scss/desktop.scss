@@ -65,7 +65,7 @@ header {
     z-index: 1;
     list-style-type: none;
     width: 100px;
-    background-color: #ddd;
+    background-color: #ccc;
 
         &.show-dropdown {
         display: block;
@@ -78,7 +78,8 @@ header {
     display: block;
     
         &:hover {
-            background-color:  #999967;
+            background-color: #ddd;
+            opacity: 0.8;
         }
 }
 
@@ -174,6 +175,7 @@ header {
 }
 
 .project-title {
+    margin: 0px;
     font-size: 1.2rem;
     font-family: 'Khula';
     text-align: center;
@@ -188,7 +190,6 @@ header {
 }
 
 .text-container {
-    margin: 10px;
     flex: 50%;
     vertical-align: top;
     text-align: center;

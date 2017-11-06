@@ -82,7 +82,8 @@ button {
 
 .hamburger__list-item--border {
     margin: 10px 0px 0px 15px;
-    border: none;
+    
+    border-bottom: 1px solid #ddd;
     font-size: 0.9rem;
     text-align: left;
 
