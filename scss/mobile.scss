@@ -2,6 +2,7 @@
     margin: 0px;
     font-size: 20px;
     box-sizing: border-box;
+    color: #262626;
 }
 
 body {
@@ -129,10 +130,11 @@ button {
 
 .project {
     text-align: center;
-    margin-top: 10px;
-    border: 1px solid white;
+    margin: 30px;
+    padding: 10px;
+    border: none;
     box-shadow: 1px 1px 1px #c9c9c9;
-    position: relative;
+    background-color: #ddd;
 }
 
 .project--index {
