@@ -55,6 +55,7 @@ button {
     margin-bottom: 10px;
     padding: 0px;
     background-image: url('../images/background.png');
+    background-repeat: repeat;
 }
 
 .hamburger__list-item {
@@ -63,14 +64,6 @@ button {
     font-family: 'Cambay';
     text-align: left;
     font-size: 1.5rem;
-
-    &:hover {
-        background-color: #ddd;
-        opacity: 0.8;
-    }
-    &:active {
-        background-color: transparent;
-    }
 }
 
 .hamburger__list-item--top-margin {
@@ -117,7 +110,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5px;  
+    padding-bottom: 30px;  
     margin: 0px auto;
     background-color: rgba(211, 211, 211, 0.4);   
 }
@@ -129,9 +122,10 @@ button {
 }
 
 .project {
+    max-width: 800px;
     text-align: center;
-    margin: 30px;
-    padding: 10px;
+    margin: 20px;
+    padding: 0px;
     border: none;
     box-shadow: 1px 1px 1px #c9c9c9;
     background-color: #ddd;
@@ -156,23 +150,28 @@ button {
 }
 
 .project-info {
-    margin: 5px;
+    margin: 0px 10px;
     font-size: 0.8rem;
     font-family: 'Khula';
     text-align: left;
 }
 
 .project-info__link {
+    margin-left: 10px;
+    margin-right: 0px;
     text-decoration: none;
     color: #636343;
-   
 }
 
 .project-tags {
-    margin: 5px;
+    margin: 5px 10px;    
     font-size: 0.9rem;
     font-family: 'Open Sans Condensed';
     font-style: italic;
+    text-align: left;
+}
+
+.project-link {
     text-align: left;
 }
 
@@ -189,17 +188,40 @@ button {
     width: 100%;
     max-width: 400px;
     max-height: 185px;
+    display: block;
 }
 
 .text-container {
     flex: 50%;
     vertical-align: top;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .project-container-index {
     display: flex;
     align-items: stretch;
     justify-content: center;
     flex-direction: column;
+}
+
+.image-container {
+    display: block;
+}
+
+.anchor-tag {
+    margin: 0px auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.anchor-tag__link{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Quicksand';
 }

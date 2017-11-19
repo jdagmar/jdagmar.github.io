@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />    
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Jessica Gustavssons Projects">
     <title>jdagmar</title>
@@ -40,7 +41,9 @@
                 <ul class="menu__list">
                     <li class="menu__dropdown-container">
                         <div class="menu__list-item">
-                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">Projects</a>
+                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">
+                                Projects<img src="images/dropdown-icon.svg"/>
+                            </a> 
                         </div>
                         <ul id="dropdown-menu__content" id="show-dropdown">
                             <li class="dropdown-menu__list-item">
@@ -74,11 +77,13 @@
                     </div>
 
                     <div class="text-container">
-                        <h3 class="project-title">The Todo List</h3>
-                        <p class="project-info">
-                            A todo list app using PHP and MySql. Notice that the database
-                            used is not included in github code. 
-                        </p>
+                        <div class="text-container__inner">           
+                            <h3 class="project-title">The Todo List</h3>
+                            <p class="project-info">
+                                A todo list app using PHP and MySql. Notice that the database
+                                used is not included in github code. 
+                            </p>
+                        </div>
                         <p class="project-tags">
                             Used techniques: HTML, CSS, PHP, MySql
                         </p>
@@ -97,11 +102,13 @@
                     </div>
 
                     <div class="text-container">
-                        <h3 class="project-title">Dunder Mifflin Shop</h3>
-                        <p class="project-info">
-                            A small webshop in order to learn basic PHP with The Office UK inspired
-                            design.
-                        </p>
+                        <div class="text-container__inner">                          
+                            <h3 class="project-title">Dunder Mifflin Shop</h3>
+                            <p class="project-info">
+                                A small webshop in order to learn basic PHP with The Office UK inspired
+                                design.
+                            </p>
+                        </div>
                         <p class="project-tags">
                             Used techniques: HTML, CSS, PHP
                         </p>
@@ -119,12 +126,14 @@
                         </a>
                     </div>
                     <div class="text-container">
-                        <h3 class="project-title">Elixir juice bar</h3>
-                        <p class="project-info">
-                            Final school project in HTML and CSS course where the assignment was to 
-                            pitch a website idea based on a given graphic profile. This is also my first
-                            attempt using BEM and coding after accessibility standards.
-                        </p>
+                        <div class="text-container__inner">                                    
+                            <h3 class="project-title">Elixir juice bar</h3>
+                            <p class="project-info">
+                                Final school project in HTML and CSS course where the assignment was to 
+                                pitch a website idea based on a given graphic profile. This is also my first
+                                attempt using BEM and coding after accessibility standards.
+                            </p>
+                        </div>
                         <p class="project-tags">
                             Used techniques: CSS, HTML, media queries, Bootstrap, flexbox, JS
                         </p>
@@ -143,11 +152,13 @@
                         </div>
 
                         <div class="text-container">
-                            <h3 class="project-title">The daily succulent</h3>
-                            <p class="project-info">
-                                Website focused on learning media queries by making mobile, tablet and 
-                                desktop views. Again, note that the links are self-referenced. 
-                            </p>
+                            <div class="text-container__inner">                                        
+                                <h3 class="project-title">The daily succulent</h3>
+                                <p class="project-info">
+                                    Website focused on learning media queries by making mobile, tablet and 
+                                    desktop views. Again, note that the links are self-referenced. 
+                                </p>
+                            </div>
                             <p class="project-tags">
                                 Used techniques: CSS, HTML, media queries, flex-box
                             </p>
@@ -165,23 +176,35 @@
                             </a>
                         </div>
                         <div class="text-container">
-                            <h3 class="project-title">Fox-o-pedia</h3>
-                            <p class="project-info">
-                                My first school assignment in HTML and CSS at Medieinstitutet.
-                                The assignment focused on learning the basics making a static 
-                                webpage. Note that the links in the menu is self-referenced. 
-                            </p>
+                            <div class="text-container__inner">                                       
+                                <h3 class="project-title">Fox-o-pedia</h3>
+                                <p class="project-info">
+                                    My first school assignment in HTML and CSS at Medieinstitutet.
+                                    The assignment focused on learning the basics making a static 
+                                    webpage. Note that the links in the menu is self-referenced. 
+                                </p>
+                            </div>
                             <p class="project-tags">
                                 Used techniques: HTML, CSS
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
 
+                <a class="anchor-tag__link" href="#">
+                    <div class="anchor-tag">
+                        <img class="anchor-tag__icon" src="images/arrow-up.svg">
+                        <span>Back to top</span>
+                    </div>
+                </a>
+
+            </div>
+       </main>
+
+       
+       
 <footer>
-    <p class="footer__copy">&copy; Jessica Gustavsson 2017</p>
+    <p class="footer__copy">&copy; Jessica Dagmar Gustavsson 2017</p>
 </footer>
       
 <script src="landingpage.js"></script>

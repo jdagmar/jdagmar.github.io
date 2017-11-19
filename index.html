@@ -4,96 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Jessica Gustavssons Projects">
     <title>jdagmar</title>
 </head>
 
 <body>
-    <header>
-        <div class="mobile-menu">
-            <h1 class="mobile-menu__logo">Jdagmar</h1>
-            <button onclick="toggleMobileNav();">
-                <img aria-label="open/close menu" class="hamburger-icon" src="images/hamburger-icon.svg"/>
-            </button>
-        </div>
-        <div class="hamburger" id="hamburger__nav">
-            <ul class="hamburger-list">
-                <li class="hamburger__list-item hamburger__list-item--border">
-                    See projects
-                </li> 
-                <li class="hamburger__list-item">
-                    <a class="hamburger__link" href="/">Recent</a>
-                </li>                         
-                <li class="hamburger__list-item hamburger__list-item--top-margin">
-                    <a class="hamburger__link" href="hobby.html">Hobby</a>
-                </li>
-                <li class="hamburger__list-item hamburger__list-item--margin">
-                    <a class="hamburger__link" href="study.html">Study</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="header__container">
-            <h1 class="header__logo">Jdagmar</h1>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__dropdown-container">
-                        <div class="menu__list-item">
-                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">Projects</a>
-                        </div>
-                        <ul id="dropdown-menu__content" id="show-dropdown">
-                            <li class="dropdown-menu__list-item">
-                                <a class="dropdown-menu__link" href="hobby.html">Hobby</a>
+        <header>
+                <div class="mobile-menu">
+                    <h1 class="mobile-menu__logo">Jdagmar</h1>
+                    <button onclick="toggleMobileNav();">
+                        <img aria-label="open/close menu" class="hamburger-icon" src="images/hamburger-icon.svg"/>
+                    </button>
+                </div>
+                <div class="hamburger" id="hamburger__nav">
+                        <ul class="hamburger-list">
+                            <li class="hamburger__list-item hamburger__list-item--border">
+                                See projects
+                            </li> 
+                            <li class="hamburger__list-item">
+                                <a class="hamburger__link" href="/">Recent</a>
+                            </li>                         
+                            <li class="hamburger__list-item hamburger__list-item--top-margin">
+                                <a class="hamburger__link" href="hobby.html">Hobby</a>
                             </li>
-                            <li class="dropdown-menu__list-item">
-                                <a class="dropdown-menu__link" href="study.html">Study</a>
+                            <li class="hamburger__list-item hamburger__list-item--margin">
+                                <a class="hamburger__link" href="study.html">Study</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__link" href="/">Home</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                    </div>
+        
+                <div class="header__container">
+                    <h1 class="header__logo">Jdagmar</h1>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__dropdown-container">
+                                <div class="menu__list-item">
+                                    <a class="menu__link" onclick="toggleDropdown(event);" href="#">
+                                        Projects<img src="images/dropdown-icon.svg"/>
+                                    </a> 
+                                </div>
+                                <ul id="dropdown-menu__content" id="show-dropdown">
+                                    <li class="dropdown-menu__list-item">
+                                        <a class="dropdown-menu__link" href="hobby.html">Hobby</a>
+                                    </li>
+                                    <li class="dropdown-menu__list-item">
+                                        <a class="dropdown-menu__link" href="study.html">Study</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="/">Home</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        
 
     <main>
         <div class="index-main-container">
             <h2 class="page-header">Recent projects</h2>
             <div class="project-container-index">
                 <div class="project project--index">
-                    <div class="project-header">
-                        <h3 class="project-title">The Todo List</h3>
-                    </div>
                     <a href="https://github.com/jdagmar/todo">
                         <img class="project-image" 
                         alt="screenshot from the todo app" 
                         src="images/todo.png">
                     </a>
+                    <div class="project-header">
+                        <h3 class="project-title">The Todo List</h3>
+                    </div>
                     <p class="project-info">
-                        A todo app with MySql
-                        <a class="project-info project-info__link" href="study.html">Read more in study</a>
+                        A todo list app made with MySql and PHP.  
                     </p>
+                    <div class="project-link">
+                        <a class="project-info project-info__link" href="study.html">
+                            Click here to read more <img src="images/arrow-right.svg"/>
+                        </a>
+                    </div>
                     <p class="project-tags">
                         Used techniques: CSS, HTML, PHP, MySql
                     </p>
                 </div>
 
                 <div class="project project--index">
-                    <div class="project-header">
-                        <h3 class="project-title">Dunder Mifflin Shop</h3>
-                    </div>
                     <a href="https://github.com/jdagmar/dunder-mifflin">
                         <img class="project-image" 
                         alt="screenshot from the dunder mifflin webshop" 
                         src="images/dunder-mifflin.png">
                     </a>
+                    <div class="project-header">
+                        <h3 class="project-title">Dunder Mifflin Shop</h3>
+                    </div>
                     <p class="project-info">
-                        Learning PHP
-                        <a class="project-info project-info__link" href="study.html">Read more in study</a>
+                        Learning PHP by making a webshop!
                     </p>
+                    <div class="project-link">
+                        <a class="project-info project-info__link" href="study.html">
+                            Click here to read more <img src="images/arrow-right.svg"/>
+                        </a>
+                    </div>
                     <p class="project-tags">
                         Used techniques: CSS, HTML, PHP
                     </p>
@@ -104,7 +116,7 @@
 </main>
 
 <footer>
-    <p class="footer__copy">&copy; Jessica Gustavsson 2017</p>
+    <p class="footer__copy">&copy; Jessica Dagmar Gustavsson 2017</p>
 </footer>
 
 <script src="landingpage.js"></script>

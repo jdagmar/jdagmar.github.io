@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" />    
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Jessica Gustavssons Projects">
     <title>jdagmar</title>
@@ -40,7 +41,9 @@
                 <ul class="menu__list">
                     <li class="menu__dropdown-container">
                         <div class="menu__list-item">
-                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">Projects</a>
+                            <a class="menu__link" onclick="toggleDropdown(event);" href="#">
+                                Projects<img src="images/dropdown-icon.svg"/>
+                            </a> 
                         </div>
                         <ul id="dropdown-menu__content" id="show-dropdown">
                             <li class="dropdown-menu__list-item">
@@ -63,20 +66,24 @@
         <div class="project-container">
             <h2 class="page-header">Hobby projects</h2>
             <div class="project">
-                <div class="project__inner-container">
-                    <div class="image-container">
-                        <a href="https://jdagmar.github.io/mangolian/">
+                <div class="project__inner-container">             
+
+                    <div class="image-container"> 
+                        <a href="https://jdagmar.github.io/mangolian/"> 
                             <img class="project-image"
                             alt="screenshot från mangolian front-page"
                             src="images/mangolian.png">
-                        </a>
-                    </div>
+                           </a>
+                    </div> 
+               
 
                     <div class="text-container">
-                        <h3 class="project-title">Mangolian</h3>
-                        <p class="project-info">A simple website for a fictionalized restuarant.
-                            I'ts mainly a small project to practice on dropdownmenus and making my first favicon.
-                        </p>
+                        <div class="text-container__inner">
+                            <h3 class="project-title">Mangolian</h3>
+                            <p class="project-info">A simple website for a fictionalized restuarant.
+                                I'ts mainly a small project to practice on dropdownmenus and making my first favicon.
+                            </p>
+                        </div>
                         <p class="project-tags">
                             Used techniques: HTML, CSS, JS 
                         </p>
@@ -95,23 +102,31 @@
                     </div>
 
                     <div class="text-container">
-                        <h3 class="project-title">Kattja</h3>
-                        <p class="project-info">
-                            My most extensive hobby project trying out my skills in HTML and CSS.
-                            It's also my first project using JS to make modal dialogues.
-                        </p>
+                        <div class="text-container__inner">                                    
+                            <h3 class="project-title">Kattja</h3>
+                            <p class="project-info">
+                                My most extensive hobby project trying out my skills in HTML and CSS.
+                                It's also my first project using JS to make modal dialogues.
+                            </p>
+                        </div>
+                                
                         <p class="project-tags">
                             Used techniques: CSS, HTML, JS
                         </p>
                     </div>
                 </div>
             </div>
-
+            <a class="anchor-tag__link" href="#">
+                    <div class="anchor-tag">
+                        <img class="anchor-tag__icon" src="images/arrow-up.svg">
+                        <span>Back to top</span>
+                    </div>
+                </a>
         </div>
 </main>
       
 <footer>
-    <p class="footer__copy">&copy; Jessica Gustavsson 2017</p>
+    <p class="footer__copy">&copy; Jessica Dagmar Gustavsson 2017</p>
 </footer>
 
 <script src="landingpage.js"></script>

@@ -20,7 +20,6 @@ header {
 
 .header__logo {
     display: block;
-    padding: 20px 25px 30px 0px;
     font-family: 'Quicksand';
     font-weight: lighter;
     font-size: 2.5rem;
@@ -68,15 +67,15 @@ header {
     background-color: #ccc;
 
         &.show-dropdown {
+        width: 140px;
         display: block;
-        margin: 0px auto;
         padding: 0px;   
     }
 }
 
 .dropdown-menu__list-item {
     display: block;
-    
+  
         &:hover {
             background-color: #ddd;
             opacity: 0.8;
@@ -127,7 +126,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;  
+    padding: 30px;  
     margin: 0px auto;
     background-color: rgba(211, 211, 211, 0.4);   
     width: 80%;
@@ -156,38 +155,6 @@ header {
     font-family: 'Khula';
     text-align: center;  
     font-weight: lighter;
-}
-
-.project-info {
-    font-size: 0.8rem;
-    font-family: 'Khula';
-    padding: 5px;
-    text-align: justify;
-}
-
-.project-title {
-    margin: 0px;
-    font-size: 1.2rem;
-    font-family: 'Khula';
-    text-align: center;
-    font-weight: lighter;
-}
-
-.project-image {
-    object-fit: fill;
-    width: 100%;
-    max-width: 400px;
-    max-height: 185px;
-}
-
-.text-container {
-    flex: 50%;
-    vertical-align: top;
-    text-align: center;
-}
-
-.image-container {
-    flex: 50%;
 }
 
 .project__inner-container {
