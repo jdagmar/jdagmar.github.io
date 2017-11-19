@@ -9,16 +9,19 @@ body {
 }
 
 header {
+    margin: 0px auto;
+    width: 80%;
     z-index: 0;
 }
 
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header__logo {
+    margin-left: 60px;
     display: block;
     font-family: 'Quicksand';
     font-weight: lighter;
@@ -43,6 +46,7 @@ header {
 
 .menu__list-item {
     padding: 0px 20px;
+    display: inline-block;
 }
 
 .menu__link {
@@ -58,11 +62,12 @@ header {
 }
 
 .menu__dropdown-container {
-    position: absolute;
+    position: relative;
     display: inline-block;
 }
 
 #dropdown-menu__content {
+    position: absolute;
     display: none;
     z-index: 1;
     list-style-type: none;
