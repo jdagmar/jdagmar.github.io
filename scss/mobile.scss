@@ -161,6 +161,10 @@ button {
     margin-right: 0px;
     text-decoration: none;
     color: #636343;
+
+    &:hover {
+        border-bottom: 1px solid #636343;
+    }
 }
 
 .project-tags {
@@ -224,4 +228,8 @@ button {
     text-decoration: none;
     text-align: center;
     font-family: 'Quicksand';
+
+    &:hover {
+        border-bottom: 1px solid #636343;
+    }
 }

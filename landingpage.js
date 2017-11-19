@@ -1,22 +1,22 @@
 
 function toggleDropdown (event) {
 
-    var dropdownMenu = document.getElementById("dropdown-menu__content");
+    var dropdownMenu = document.getElementById("menu__dropdown");
 
-    if (dropdownMenu.classList.contains("show-dropdown")){
-        dropdownMenu.classList.remove("show-dropdown");
+    if (dropdownMenu.classList.contains("menu__dropdown-container--open")){
+        dropdownMenu.classList.remove("menu__dropdown-container--open");
     }
     else {
-        dropdownMenu.classList.add("show-dropdown");
+        dropdownMenu.classList.add("menu__dropdown-container--open");
         event.stopPropagation();
     }
 }
 
 function closeDropdown (event) {
 
-    var dropdownMenu = document.getElementById("dropdown-menu__content");
+    var dropdownMenu = document.getElementById("menu__dropdown");
 
-        dropdownMenu.classList.remove("show-dropdown");
+        dropdownMenu.classList.remove("menu__dropdown-container--open");
 }
 
 window.addEventListener("click", closeDropdown)
