@@ -2,7 +2,7 @@ name: Deployment
 on:
   push:
     branches:
-      - master
+      - development
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,3 +24,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
+          publish_branch: master
