@@ -1,9 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <pre className="App">
+    <pre className="text-pink-700">
       {`   
                      _                   _   _             
                     | |                 | | (_)            
