@@ -1,20 +1,16 @@
 import * as React from 'react';
-import './App.css';
+import { ProjectCards, Header, Nav } from './components/';
 
-function App() {
+export const App = () => {
   return (
-    <pre className="text-pink-700">
-      {`   
-                     _                   _   _             
-                    | |                 | | (_)            
-  ___ ___  _ __  ___| |_ _ __ _   _  ___| |_ _  ___  _ __  
- / __/ _ \\| '_ \\/ __| __| '__| | | |/ __| __| |/ _ \\| '_ \\ 
-| (_| (_) | | | \\__ \\ |_| |  | |_| | (__| |_| | (_) | | | |
- \\___\\___/|_| |_|___/\\__|_|   \\__,_|\\___|\\__|_|\\___/|_| |_|
-
- `}
-    </pre>
+    <>
+      <div className="p-5">
+        <Header />
+        {/* <Nav /> */}
+      </div>
+      <main className="bg-gray-200 p-4">
+        <ProjectCards />
+      </main>
+    </>
   );
-}
-
-export default App;
+};
