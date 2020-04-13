@@ -1,15 +1,18 @@
 import * as React from 'react';
-import { GitHubIcon, LinkedInIcon } from './Icons';
+import { Nav } from '.';
 
 export const Header = () => {
   return (
-    <header className="text-center">
-      <h1 className="text-4xl text-tangerine-500">Jessica Gustavsson</h1>
-      <p className="font-open-sans text-white-800">Frontend developer</p>
-      {/* <div className="flex justify-center">
-        <GitHubIcon />
-        <LinkedInIcon />
-      </div> */}
+    <header className="sticky top-0 p-4 bg-white">
+      <div className="max-w-6xl m-auto flex justify-between items-center">
+        <div>
+          <p className="font-montserrat text-lg font-black">
+            Jessica Gustavsson
+          </p>
+          <p className="font-open-sans text-sm">Frontend developer</p>
+        </div>
+        <Nav />
+      </div>
     </header>
   );
 };
