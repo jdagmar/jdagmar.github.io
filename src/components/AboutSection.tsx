@@ -18,9 +18,9 @@ export const AboutSection = () => {
           </div>
           <div className="ml-5 max-w-xl">
             <p className="font-open-sans mb-4">
-              <span className="text-swamp-green-600">Hi</span>, i work as a
-              frontend developer in Stockholm building accessible webapps by day
-              and react enthusiast at night.
+              <span className="text-swamp-green-600">Hi</span>, I work as a
+              frontend developer in Stockholm building accessible web apps by
+              day and react enthusiast by night.
             </p>
             <SkillsList />
             <div className="mt-5">
