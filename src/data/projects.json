@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Budget planner",
+    "description": "React app where you can add an income and expenses to calcluate your account balance.",
+    "url": "https://jdagmar.github.io/budget-planner/",
+    "website": "https://jdagmar.github.io/budget-planner/",
+    "topics": ["React", "tailwindcss", "TypeScript"]
+  },
+  {
+    "name": "Random animal",
+    "description": "React app making use of two random animal image APIS to generate random images of dogs and cats.",
+    "url": "https://github.com/jdagmar/random-animal",
+    "website": "",
+    "topics": ["React", "TypeScript", "styled components"]
+  },
+  {
+    "name": "Angular dashboard",
+    "description": "Angular app to explore some basic Angular, including API calls.",
+    "url": "https://jdagmar.github.io/budget-planner/",
+    "website": "https://jdagmar.github.io/angular-dashboard/dashboard",
+    "topics": ["Angular", "TypeScript", "Sass"]
+  }
+]
