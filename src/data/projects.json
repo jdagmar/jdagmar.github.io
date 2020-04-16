@@ -10,7 +10,7 @@
     "name": "Random animal",
     "description": "React app making use of two random animal image APIS to generate random images of dogs and cats.",
     "url": "https://github.com/jdagmar/random-animal",
-    "website": null,
+    "website": "https://jdagmar.github.io/random-animal/",
     "topics": ["React", "TypeScript", "styled components"]
   },
   {
