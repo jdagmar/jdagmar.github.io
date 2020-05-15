@@ -3,7 +3,7 @@ import { Nav } from '.';
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 p-4 bg-white">
+    <header className="p-4 bg-gray-200">
       <div className="max-w-6xl m-auto flex justify-between items-center">
         <div>
           <p className="font-montserrat text-lg font-black">
