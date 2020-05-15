@@ -16,8 +16,10 @@ export const SkillsList = () => {
 
   return (
     <>
-      <h3 className="font-montserrat text-xl font-black">Technical skills</h3>
-      <ul className="flex flex-wrap leading leading-7 text-center">
+      <h3 className="uppercase font-montserrat text-xl font-black">
+        Technical skills
+      </h3>
+      <ul className="flex flex-wrap leading leading-7 text-center my-4">
         {skillSet}
       </ul>
     </>
