@@ -7,4 +7,6 @@ export { ProjectSection } from './ProjectsSection';
 export { AboutSection } from './AboutSection';
 export { SectionHeading } from './SectionHeading';
 export { IntroHero } from './IntroHero';
+export { Link } from './Link';
+
 export { GitHubIcon, LinkedInIcon, DotIcon } from './Icons';

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from './Link';
 
 export const Nav = () => {
   const links = [
@@ -14,9 +15,7 @@ export const Nav = () => {
 
   const navLinks = links.map(link => (
     <li>
-      <a href={link.url} className="border-b-2 border-tangerine-500 p-2 mr-2">
-        {link.text}
-      </a>
+      <Link url={link.url} text={link.text} />
     </li>
   ));
 
