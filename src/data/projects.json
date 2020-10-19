@@ -13,6 +13,6 @@
     "repo": "https://github.com/jdagmar/weather-app",
     "website": "https://jdagmar.github.io/weather-app/",
     "screenshot": ["images/weather-app.png"],
-    "topics": ["Angular", "Scss", "TypeScript", "Linea Iconset", "OpenWeatherMap"]
+    "topics": ["Angular", "Sass", "TypeScript", "Linea Iconset", "OpenWeatherMap"]
   }
 ]
