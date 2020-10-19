@@ -4,7 +4,7 @@ import { SectionHeading } from '.';
 
 export const ProjectSection = () => {
   return (
-    <section id="projects" className="section relative">
+    <section id="projects" className="section relative anchor-stop">
       <div className="max-w-6xl m-auto py-8 px-4">
         <SectionHeading text="Projects" />
         <ProjectCards />

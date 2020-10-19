@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   theme: {
     fontFamily: {
@@ -35,5 +37,19 @@ module.exports = {
     padding: ['responsive', 'last'],
     flexDirection: ['responsive']
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents }) {
+      const anchor = {
+        '.anchor-stop::before': {
+          display: 'block',
+          content: " ",
+          marginTop: '-285px',
+          height: '285px',
+          visibility: 'hidden',
+          pointerEvents: 'none',
+        },
+      }
+      addComponents(anchor)
+    })
+  ],
 }

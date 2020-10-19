@@ -5,7 +5,7 @@ import { SectionHeading, Link } from '.';
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="">
+    <section id="about" className="anchor-stop">
       <div className="max-w-6xl m-auto py-8 px-4">
         <SectionHeading text="About" />
         <div className="flex justify-between lg:flex-row flex-col-reverse mt-12 w-full my-4 p-8 bg-gray-200">
