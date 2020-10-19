@@ -5,8 +5,8 @@ import { Link } from './Link';
 
 export const ProjectCards = () => {
   const cards = projects.map(project => (
-    <li className="w-full my-4 p-8 bg-gray-200" key={project.name}>
-      <div className="flex justify-between flex-col lg:flex-row">
+    <li className="w-full my-16 p-8 bg-gray-200" key={project.name}>
+      <div className="flex justify-between flex-col sm:flex-row">
         <div className="flex flex-col justify-between">
           <div>
             <h3 className="uppercase font-montserrat text-2xl font-black">
@@ -36,7 +36,7 @@ export const ProjectCards = () => {
           </div>
         </div>
         {project.screenshot.map(screenshot => (
-          <div className="w-full lg:w-1/4">
+          <div className="w-full sm:w-1/3 lg:w-1/4 pt-6 sm:pt-0 sm:pl-8">
             <img
               src={process.env.PUBLIC_URL + '/' + screenshot}
               alt=""
