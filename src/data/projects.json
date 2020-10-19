@@ -2,9 +2,17 @@
   {
     "name": "Budget Planner",
     "description": "Budget Planner is an react app inspired by my very first coding project 2016. Enter your income and some expenses and the app sums it up.",
-    "url": "https://jdagmar.github.io/budget-planner/",
+    "repo": "https://github.com/jdagmar/budget-planner",
     "website": "https://jdagmar.github.io/budget-planner/",
     "screenshot": ["images/budget-planner.png"],
     "topics": ["React", "tailwindcss", "TypeScript"]
+  },
+  {
+    "name": "Weather App",
+    "description": "Weather app is a angular app where you can search for current weather through the OpenWeatherApp API.",
+    "repo": "https://github.com/jdagmar/weather-app",
+    "website": "https://jdagmar.github.io/weather-app/",
+    "screenshot": ["images/weather-app.png"],
+    "topics": ["Angular", "Scss", "TypeScript", "Linea Iconset", "OpenWeatherMap"]
   }
 ]
