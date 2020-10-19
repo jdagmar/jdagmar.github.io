@@ -47,5 +47,5 @@ export const ProjectCards = () => {
       </div>
     </li>
   ));
-  return <ul className="flex justify-center flex-wrap py-4 mt-5">{cards}</ul>;
+  return <ul className="flex justify-center flex-wrap">{cards}</ul>;
 };

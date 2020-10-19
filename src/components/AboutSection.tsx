@@ -13,12 +13,12 @@ export const AboutSection = () => {
             <h2 className="uppercase font-montserrat text-2xl font-black">
               Who am I?
             </h2>
-            <p className="text-md font-open-sans mt-4 mb-8">
+            <p className="text-md font-open-sans mt-4 mb-12">
               Hi, I'm Jessica a frontend developer who is passionate about
               building accessible and scalable stuff.
             </p>
             <SkillsList />
-            <div className="mt-10">
+            <div className="mt-16">
               <Link
                 url="https://www.linkedin.com/in/jessica-gustavsson-96375515b/"
                 text="LinkedIn"
