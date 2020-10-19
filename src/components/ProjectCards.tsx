@@ -29,10 +29,10 @@ export const ProjectCards = () => {
             </div>
           </div>
           <div className="flex mt-1 mb-3 text-gray-700">
-            {project.url !== null && (
-              <Link url={project.url} text="View Project" />
+            {project.website !== null && (
+              <Link url={project.website} text="View Project" />
             )}
-            <Link url={project.website} text="View Code" />
+            <Link url={project.repo} text="View Code" />
           </div>
         </div>
         {project.screenshot.map(screenshot => (
