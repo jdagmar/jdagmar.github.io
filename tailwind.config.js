@@ -35,21 +35,10 @@ module.exports = {
   },
   variants: {
     padding: ['responsive', 'last'],
-    flexDirection: ['responsive']
+    flexDirection: ['responsive'],
+    textColor: ['hover', 'group-hover'],
+    borderColor: ['hover', 'group-hover'],
+    transitionProperty: ['motion-reduce']
   },
-  plugins: [
-    plugin(function ({ addComponents }) {
-      const anchor = {
-        '.anchor-stop::before': {
-          display: 'block',
-          content: " ",
-          marginTop: '-285px',
-          height: '285px',
-          visibility: 'hidden',
-          pointerEvents: 'none',
-        },
-      }
-      addComponents(anchor)
-    })
-  ],
+  plugins: [],
 }
