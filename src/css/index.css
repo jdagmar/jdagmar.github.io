@@ -3,3 +3,26 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+  @responsive {
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+
+    .anchor-stop::before {
+      display: block;
+      content: '';
+      margin-top: -80px;
+      height: 80px;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .smooth-scroll {
+    scroll-behavior: auto !important;
+  }
+}
