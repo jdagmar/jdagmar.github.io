@@ -14,7 +14,7 @@ export const Nav = () => {
   ];
 
   const navLinks = links.map(link => (
-    <li>
+    <li className="text-sm">
       <Link url={link.url} text={link.text} />
     </li>
   ));
