@@ -4,8 +4,15 @@ import { iconHelper } from './../helpers/iconHelper';
 import { Link } from './Link';
 
 export const ProjectCards = () => {
-  const cards = projects.map(project => (
-    <li className="w-full my-16 p-8 bg-gray-200" key={project.name}>
+  const cards = projects.map((project, i) => (
+    <li
+      className={`my-40 w-11/12 p-8 bg-gray-200 backdrop backdrop-behind ${
+        i % 2 === 1
+          ? 'backdrop-tangerine backdrop-left'
+          : 'backdrop-swampgreen backdrop-right'
+      } relative ${i % 2 === 1 ? 'ml-auto' : 'mr-auto'}`}
+      key={project.name}
+    >
       <div className="flex justify-between flex-col sm:flex-row">
         <div className="flex flex-col justify-between">
           <div>
@@ -15,16 +22,22 @@ export const ProjectCards = () => {
             <p className="font-open-sans my-2 max-w-xl">
               {project.description}
             </p>
-            <div className="mt-4 mb-2">
+            <div
+              className={`mt-4 mb-2 ${
+                i % 2 === 1 ? 'text-tangerine-500' : 'text-swamp-green-500'
+              }`}
+            >
               {project.topics.map((topic, i, topics) => (
-                <>
-                  <span className="font-montserrat text-sm">{topic}</span>
+                <span key={i}>
+                  <span className="font-montserrat text-gray-700 text-sm">
+                    {topic}
+                  </span>
                   {topics.length - 1 !== i && (
-                    <div className="text-tangerine-500 h-2 w-2 inline-block mx-2">
+                    <div className="h-2 w-2 inline-block mx-2">
                       {iconHelper('dot', 0.5)}
                     </div>
                   )}
-                </>
+                </span>
               ))}
             </div>
           </div>
@@ -35,17 +48,22 @@ export const ProjectCards = () => {
             <Link url={project.repo} text="View Code" />
           </div>
         </div>
-        {project.screenshot.map(screenshot => (
-          <div className="w-full sm:w-1/3 lg:w-1/4 pt-6 sm:pt-0 sm:pl-8">
-            <img
-              src={process.env.PUBLIC_URL + '/' + screenshot}
-              alt=""
-              className="h-auto w-full"
-            />
+        {project.screenshot.map((screenshot, i) => (
+          <div
+            className="w-full sm:w-1/3 lg:w-1/4 pt-6 sm:pt-0 sm:pl-8"
+            key={i}
+          >
+            <div className="img-square">
+              <img
+                src={process.env.PUBLIC_URL + '/' + screenshot}
+                alt=""
+                className="h-auto overflow-hidden w-full hover:border-tangerine-500"
+              />
+            </div>
           </div>
         ))}
       </div>
     </li>
   ));
-  return <ul className="flex justify-center flex-wrap">{cards}</ul>;
+  return <ul className="flex-1 justify-center flex-wrap p-6">{cards}</ul>;
 };

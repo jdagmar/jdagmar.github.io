@@ -26,9 +26,9 @@ export const AboutSection = () => {
               <Link url="https://github.com/jdagmar" text="Github" />
             </div>
           </div>
-          <div className="m-4 mb-10 lg:mb-0 relative">
+          <div className="h-64 w-64 m-4 mb-10 lg:mb-0 relative backdrop backdrop-tangerine backdrop-left backdrop-round backdrop-overlay">
             <img
-              className="rounded-full h-64 w-64 object-cover m-auto"
+              className="rounded-full w-full h-full object-cover m-auto absolute z-10"
               src={portrait}
               alt=""
             />
