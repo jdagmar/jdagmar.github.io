@@ -4,7 +4,7 @@ import { iconHelper } from '../helpers/iconHelper';
 
 export const SkillsList = () => {
   const skillSet = skills.map((skill, i, skills) => (
-    <li className="font-montserrat text-sm">
+    <li className="font-montserrat text-sm" key={i}>
       {skill}
       {skills.length - 1 !== i && (
         <div className="text-tangerine-500 h-2 w-2 inline-block mx-2">
