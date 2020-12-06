@@ -34485,6 +34485,14 @@ video {
   pointer-events: none;
 }
 
+.backdrop::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 100%;
+}
+
 .backdrop-swampgreen::before {
   background: #a6af98;
 }
@@ -34498,11 +34506,11 @@ video {
 }
 
 .backdrop-right::before {
-  right: -24px;
+  right: -8px;
 }
 
 .backdrop-left::before {
-  left: -24px;
+  left: -8px;
 }
 
 .backdrop-overlay::before {
@@ -34511,14 +34519,6 @@ video {
 
 .backdrop-behind::before {
   z-index: -1;
-}
-
-.backdrop::before {
-  content: '';
-  position: absolute;
-  bottom: -24px;
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -65295,6 +65295,14 @@ video {
     pointer-events: none;
   }
 
+  .sm\:backdrop::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 100%;
+  }
+
   .sm\:backdrop-swampgreen::before {
     background: #a6af98;
   }
@@ -65308,11 +65316,11 @@ video {
   }
 
   .sm\:backdrop-right::before {
-    right: -24px;
+    right: -8px;
   }
 
   .sm\:backdrop-left::before {
-    left: -24px;
+    left: -8px;
   }
 
   .sm\:backdrop-overlay::before {
@@ -65321,14 +65329,6 @@ video {
 
   .sm\:backdrop-behind::before {
     z-index: -1;
-  }
-
-  .sm\:backdrop::before {
-    content: '';
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -96095,6 +96095,14 @@ video {
     pointer-events: none;
   }
 
+  .md\:backdrop::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 100%;
+  }
+
   .md\:backdrop-swampgreen::before {
     background: #a6af98;
   }
@@ -96108,11 +96116,11 @@ video {
   }
 
   .md\:backdrop-right::before {
-    right: -24px;
+    right: -8px;
   }
 
   .md\:backdrop-left::before {
-    left: -24px;
+    left: -8px;
   }
 
   .md\:backdrop-overlay::before {
@@ -96121,14 +96129,6 @@ video {
 
   .md\:backdrop-behind::before {
     z-index: -1;
-  }
-
-  .md\:backdrop::before {
-    content: '';
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -126895,6 +126895,14 @@ video {
     pointer-events: none;
   }
 
+  .lg\:backdrop::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 100%;
+  }
+
   .lg\:backdrop-swampgreen::before {
     background: #a6af98;
   }
@@ -126908,11 +126916,11 @@ video {
   }
 
   .lg\:backdrop-right::before {
-    right: -24px;
+    right: -8px;
   }
 
   .lg\:backdrop-left::before {
-    left: -24px;
+    left: -8px;
   }
 
   .lg\:backdrop-overlay::before {
@@ -126921,14 +126929,6 @@ video {
 
   .lg\:backdrop-behind::before {
     z-index: -1;
-  }
-
-  .lg\:backdrop::before {
-    content: '';
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -157695,6 +157695,14 @@ video {
     pointer-events: none;
   }
 
+  .xl\:backdrop::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 100%;
+  }
+
   .xl\:backdrop-swampgreen::before {
     background: #a6af98;
   }
@@ -157708,11 +157716,11 @@ video {
   }
 
   .xl\:backdrop-right::before {
-    right: -24px;
+    right: -8px;
   }
 
   .xl\:backdrop-left::before {
-    left: -24px;
+    left: -8px;
   }
 
   .xl\:backdrop-overlay::before {
@@ -157721,14 +157729,6 @@ video {
 
   .xl\:backdrop-behind::before {
     z-index: -1;
-  }
-
-  .xl\:backdrop::before {
-    content: '';
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -188495,6 +188495,14 @@ video {
     pointer-events: none;
   }
 
+  .\32xl\:backdrop::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 100%;
+  }
+
   .\32xl\:backdrop-swampgreen::before {
     background: #a6af98;
   }
@@ -188508,11 +188516,11 @@ video {
   }
 
   .\32xl\:backdrop-right::before {
-    right: -24px;
+    right: -8px;
   }
 
   .\32xl\:backdrop-left::before {
-    left: -24px;
+    left: -8px;
   }
 
   .\32xl\:backdrop-overlay::before {
@@ -188521,13 +188529,5 @@ video {
 
   .\32xl\:backdrop-behind::before {
     z-index: -1;
-  }
-
-  .\32xl\:backdrop::before {
-    content: '';
-    position: absolute;
-    bottom: -24px;
-    width: 100%;
-    height: 100%;
   }
 }
