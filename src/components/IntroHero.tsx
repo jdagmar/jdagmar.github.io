@@ -4,7 +4,7 @@ export const IntroHero = () => {
   return (
     <div className="h-screen text-center bg-gray-200 pt-40">
       <div className="group inline-block">
-        <h1 className="uppercase tracking-wide font-montserrat text-swamp-green-500 text-5xl transition motion-reduce:transition-none duration-1000 ease-in-out group-hover:text-tangerine-500">
+        <h1 className="uppercase tracking-wide font-montserrat text-swamp-green-500 text-2xl lg:text-5xl transition motion-reduce:transition-none duration-1000 ease-in-out group-hover:text-tangerine-500">
           Jessica Gustavsson
         </h1>
         <p className="font-open-sans flex justify-center mb-10">
