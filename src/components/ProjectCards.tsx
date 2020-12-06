@@ -6,11 +6,11 @@ import { Link } from './Link';
 export const ProjectCards = () => {
   const cards = projects.map((project, i) => (
     <li
-      className={`my-40 lg:w-11/12 mr-2 p-8 bg-gray-200 backdrop backdrop-behind ${
+      className={`mb-40 lg:w-11/12  p-8 bg-gray-200 backdrop backdrop-behind ${
         i % 2 === 1
           ? 'backdrop-tangerine backdrop-left'
           : 'backdrop-swampgreen backdrop-right'
-      } relative ${i % 2 === 1 ? 'lg:ml-auto' : 'lg:mr-auto'}`}
+      } relative ${i % 2 === 1 ? 'ml-2 lg:ml-auto' : 'mr-2 lg:mr-auto'}`}
       key={project.name}
     >
       <div className="flex justify-between flex-col sm:flex-row">
@@ -65,5 +65,5 @@ export const ProjectCards = () => {
       </div>
     </li>
   ));
-  return <ul className="flex-1 justify-center flex-wrap md:p-6">{cards}</ul>;
+  return <ul className="mt-16 flex-1 justify-center flex-wrap">{cards}</ul>;
 };
