@@ -23,13 +23,13 @@ export const ProjectCards = () => {
               {project.description}
             </p>
             <div
-              className={`mt-4 mb-2 ${
+              className={`mt-6 mb-2 ${
                 i % 2 === 1 ? 'text-tangerine-500' : 'text-swamp-green-500'
               }`}
             >
               {project.topics.map((topic, i, topics) => (
                 <span key={i}>
-                  <span className="font-montserrat text-gray-700 text-sm">
+                  <span className="font-montserrat tracking-wider text-gray-700 text-sm">
                     {topic}
                   </span>
                   {topics.length - 1 !== i && (
