@@ -1,5 +1,13 @@
 [
   {
+    "name": "Random Animal",
+    "description": "Random Animal is a small app where you can get a random picture, gif or video of a cat or dog.",
+    "repo": "https://github.com/jdagmar/random-animal",
+    "website": "https://jdagmar.github.io/random-animal/",
+    "screenshot": ["images/random-animal.png"],
+    "topics": ["React", "Styled components", "TypeScript"]
+  },
+  {
     "name": "Weather App",
     "description": "Weather App is an Angular app where you can search for current weather through the OpenWeatherApp API.",
     "repo": "https://github.com/jdagmar/weather-app",
