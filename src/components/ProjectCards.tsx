@@ -6,7 +6,7 @@ import { Link } from './Link';
 export const ProjectCards = () => {
   const cards = projects.map((project, i) => (
     <li
-      className={`mb-40 lg:w-11/12  p-10 bg-gray-200 backdrop backdrop-behind ${
+      className={`mb-40 lg:w-11/12  p-10 bg-gray-100 shadow-sm backdrop backdrop-behind ${
         i % 2 === 1
           ? 'backdrop-tangerine backdrop-left'
           : 'backdrop-swampgreen backdrop-right'

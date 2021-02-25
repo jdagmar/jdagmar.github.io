@@ -8,7 +8,7 @@ export const AboutSection = () => {
     <section id="about" className="anchor-stop">
       <div className="max-w-7xl m-auto pb-12 pt-24 px-4 lg:px-0">
         <SectionHeading text="About" />
-        <div className="flex justify-between lg:flex-row flex-col-reverse mt-12 w-full my-4 p-8 bg-gray-200">
+        <div className="flex justify-between lg:flex-row flex-col-reverse mt-12 w-full my-4 p-8 bg-gray-100 shadow-sm">
           <div className="max-w-3xl">
             <h2 className="font-montserrat text-2xl font-black">Who am I?</h2>
             <p className="text-md font-open-sans mt-4 mb-12 leading-7">
