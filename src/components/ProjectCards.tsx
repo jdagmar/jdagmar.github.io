@@ -6,7 +6,7 @@ import { Link } from './Link';
 export const ProjectCards = () => {
   const cards = projects.map((project, i) => (
     <li
-      className={`mb-40 lg:w-11/12  p-8 bg-gray-200 backdrop backdrop-behind ${
+      className={`mb-40 lg:w-11/12  p-10 bg-gray-200 backdrop backdrop-behind ${
         i % 2 === 1
           ? 'backdrop-tangerine backdrop-left'
           : 'backdrop-swampgreen backdrop-right'
@@ -16,20 +16,20 @@ export const ProjectCards = () => {
       <div className="flex justify-between flex-col sm:flex-row">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="uppercase font-montserrat text-2xl font-black">
+            <h3 className="font-montserrat text-4xl font-black mb-5">
               {project.name}
             </h3>
-            <p className="font-open-sans my-2 max-w-xl">
+            <p className="font-open-sans my-2 max-w-xl leading-7 mb-6">
               {project.description}
             </p>
             <div
-              className={`mt-6 mb-2 ${
+              className={`mb-10 ${
                 i % 2 === 1 ? 'text-tangerine-500' : 'text-swamp-green-500'
               }`}
             >
               {project.topics.map((topic, i, topics) => (
                 <span key={i}>
-                  <span className="font-montserrat tracking-wider text-gray-700 text-sm">
+                  <span className="font-montserrat uppercase tracking-wider text-gray-700 text-sm">
                     {topic}
                   </span>
                   {topics.length - 1 !== i && (
@@ -50,7 +50,7 @@ export const ProjectCards = () => {
         </div>
         {project.screenshot.map((screenshot, i) => (
           <div
-            className="w-full sm:w-1/3 lg:w-1/4 pt-6 sm:pt-0 sm:pl-8"
+            className="w-full sm:w-1/3 lg:w-2/5 pt-6 sm:pt-0 sm:pl-8"
             key={i}
           >
             <div className="img-square">
@@ -65,5 +65,5 @@ export const ProjectCards = () => {
       </div>
     </li>
   ));
-  return <ul className="mt-16 flex-1 justify-center flex-wrap">{cards}</ul>;
+  return <ul className="mt-32 flex-1 justify-center flex-wrap">{cards}</ul>;
 };

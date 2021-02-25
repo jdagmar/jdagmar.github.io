@@ -6,14 +6,12 @@ import { SectionHeading, Link } from '.';
 export const AboutSection = () => {
   return (
     <section id="about" className="anchor-stop">
-      <div className="max-w-6xl m-auto py-8 px-4">
+      <div className="max-w-7xl m-auto pb-12 pt-24 px-4 lg:px-0">
         <SectionHeading text="About" />
         <div className="flex justify-between lg:flex-row flex-col-reverse mt-12 w-full my-4 p-8 bg-gray-200">
-          <div className="max-w-xl">
-            <h2 className="uppercase font-montserrat text-2xl font-black">
-              Who am I?
-            </h2>
-            <p className="text-md font-open-sans mt-4 mb-12">
+          <div className="max-w-3xl">
+            <h2 className="font-montserrat text-2xl font-black">Who am I?</h2>
+            <p className="text-md font-open-sans mt-4 mb-12 leading-7">
               Hi, I'm Jessica a frontend developer who is passionate about
               building accessible and scalable stuff.
             </p>

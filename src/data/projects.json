@@ -1,7 +1,7 @@
 [
   {
     "name": "Random Animal",
-    "description": "Random Animal is a small app where you can get a random picture, gif or video of a cat or dog.",
+    "description": "For those days when you just really need to see some cute animals! Random animal, or really random cat or dog, is an app where you can get a random picture, gif or video of a cat or dog.",
     "repo": "https://github.com/jdagmar/random-animal",
     "website": "https://jdagmar.github.io/random-animal/",
     "screenshot": ["images/random-animal.png"],
@@ -9,7 +9,7 @@
   },
   {
     "name": "Weather App",
-    "description": "Weather App is an Angular app where you can search for current weather through the OpenWeatherApp API.",
+    "description": "What better way to learn a framework than to build an weather app! In this app you can search for a city and fetch the current weather.",
     "repo": "https://github.com/jdagmar/weather-app",
     "website": "https://jdagmar.github.io/weather-app/",
     "screenshot": ["images/weather-app.png"],
@@ -17,7 +17,7 @@
   },
   {
     "name": "Budget Planner",
-    "description": "Budget Planner is an react app inspired by my very first coding project 2016. Enter your income and some expenses and the app sums it up.",
+    "description": "Still scribbling down your monthly budget on paper? Try budget planner, enter you'r income and monthly expenses and the app sums up everyhing and alerts if you'r exceeding your budget.",
     "repo": "https://github.com/jdagmar/budget-planner",
     "website": "https://jdagmar.github.io/budget-planner/",
     "screenshot": ["images/budget-planner.png"],
