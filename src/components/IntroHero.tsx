@@ -1,6 +1,3 @@
-import * as React from 'react';
-import portrait from './../images/portrait-github.png';
-
 export const IntroHero = () => {
   return (
     <div className="bg-gray-200 pt-24">
@@ -13,13 +10,6 @@ export const IntroHero = () => {
             Frontend developer with accessibility in mind
           </p>
         </div>
-
-        {/* <a
-          href="#projects"
-          className="uppercase font-montserrat border-tangerine-500 border-2 py-2 px-3 transition motion-reduce:transition-none duration-1000 ease-in-out group-hover:border-swamp-green-500"
-        >
-          See projects
-        </a> */}
       </div>
     </div>
   );
