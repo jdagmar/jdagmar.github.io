@@ -10,7 +10,7 @@ export const SkillsList = () => {
     >
       {skill}
       {skills.length - 1 !== i && (
-        <div className="text-swamp-green-500 h-2 w-2 inline-block mx-2">
+        <div className="text-swamp-green-600 h-2 w-2 inline-block mx-2">
           {iconHelper('dot', 0.5)}
         </div>
       )}

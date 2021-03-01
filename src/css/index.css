@@ -19,6 +19,25 @@
       pointer-events: none;
     }
 
+    .custom-underline::after {
+      content: '';
+      border-bottom: 4px solid transparent;
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      border-radius: 0.25rem;
+    }
+
+    .custom-underline-tangerine::after {
+      border-color: #ffa06f;
+    }
+
+    .custom-underline-swamp-green::after {
+      border-color: #737e61;
+    }
+
     .backdrop::before {
       content: '';
       position: absolute;
@@ -33,10 +52,6 @@
 
     .backdrop-tangerine::before {
       background: #ffbd9a;
-    }
-
-    .backdrop-round::before {
-      border-radius: 100%;
     }
 
     .backdrop-right::before {

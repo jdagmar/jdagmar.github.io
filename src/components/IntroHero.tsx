@@ -6,7 +6,11 @@ export const IntroHero = () => {
           Jessica Gustavsson
         </h1>
         <p className="font-open-sans mt-6 font-bold text-md lg:text-xl">
-          Frontend developer with accessibility in mind
+          Frontend developer with{' '}
+          <span className="custom-underline custom-underline-tangerine relative">
+            accessibility
+          </span>{' '}
+          in mind
         </p>
       </div>
     </div>
