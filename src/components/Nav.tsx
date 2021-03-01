@@ -15,13 +15,13 @@ export const Nav = () => {
 
   const navLinks = links.map(link => (
     <li className="text-sm" key={link.text}>
-      <Link url={link.url} text={link.text} />
+      <Link url={link.url} text={link.text} activeColor="swamp-green-500" />
     </li>
   ));
 
   return (
-    <nav className="text-center">
-      <ul className="flex">{navLinks}</ul>
+    <nav className="text-center w-full">
+      <ul className="flex justify-end">{navLinks}</ul>
     </nav>
   );
 };
