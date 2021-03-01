@@ -6,7 +6,8 @@ export const App = () => {
     <>
       <Header />
       <IntroHero />
-      <main className="mb-12">
+
+      <main>
         <ProjectSection />
         <AboutSection />
       </main>
