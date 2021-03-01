@@ -10,7 +10,7 @@ export const SkillsList = () => {
     >
       {skill}
       {skills.length - 1 !== i && (
-        <div className="text-tangerine-500 h-2 w-2 inline-block mx-2">
+        <div className="text-swamp-green-500 h-2 w-2 inline-block mx-2">
           {iconHelper('dot', 0.5)}
         </div>
       )}
@@ -19,7 +19,9 @@ export const SkillsList = () => {
 
   return (
     <>
-      <h3 className="font-montserrat text-xl font-black">Technical skills</h3>
+      <h2 className="tracking-wide font-montserrat text-3xl font-black">
+        What I can do
+      </h2>
       <ul className="flex flex-wrap text-center my-4">{skillSet}</ul>
     </>
   );

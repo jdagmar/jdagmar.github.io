@@ -16,7 +16,7 @@ export const ProjectCards = () => {
       <div className="flex justify-between flex-col sm:flex-row">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="font-montserrat text-4xl font-black mb-5">
+            <h3 className="tracking-wide font-montserrat text-4xl font-black mb-5">
               {project.name}
             </h3>
             <p className="font-open-sans my-2 max-w-xl leading-7 mb-6">
@@ -43,9 +43,17 @@ export const ProjectCards = () => {
           </div>
           <div className="flex mt-1 mb-3 text-gray-700">
             {project.website !== null && (
-              <Link url={project.website} text="View Project" />
+              <Link
+                url={project.website}
+                text="View Project"
+                activeColor={i % 2 === 1 ? 'tangerine-500' : 'swamp-green-500'}
+              />
             )}
-            <Link url={project.repo} text="View Code" />
+            <Link
+              url={project.repo}
+              text="View Code"
+              activeColor={i % 2 === 1 ? 'tangerine-500' : 'swamp-green-500'}
+            />
           </div>
         </div>
         {project.screenshot.map((screenshot, i) => (
