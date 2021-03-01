@@ -1,19 +1,34 @@
 import * as React from 'react';
+import { useEffect, useState } from 'react';
 import { Nav } from '.';
 
 export const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 350) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
   return (
-    <header className="p-6 bg-gray-100 fixed top-0 w-full z-20 opacity-90 tracking-wide">
+    <header
+      className={` ${
+        scrolled ? 'fixed top-0 w-full z-20 opacity-90' : null
+      } p-6 bg-gray-100  tracking-wide`}
+    >
       <div className="max-w-7xl m-auto flex justify-between items-center">
-        <div>
-          <p className="font-montserrat text-sm font-bold">
-            <span className="hidden lg:block">Jessica Gustavsson</span>
-            <span className="text-lg lg:hidden">JG</span>
+        {scrolled && (
+          <p className="font-montserrat text-md font-bold text-swamp-green-700">
+            JG
           </p>
-          <p className=" font-open-sans text-xs hidden lg:block">
-            Frontend developer
-          </p>
-        </div>
+        )}
         <Nav />
       </div>
     </header>
