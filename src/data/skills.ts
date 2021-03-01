@@ -16,5 +16,7 @@ export const skills = [
   'Episerver',
   'Umbraco',
   'SQL',
-  'C#'
+  'C#',
+  'MVC',
+  'Styled Components'
 ];

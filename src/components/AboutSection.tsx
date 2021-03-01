@@ -15,8 +15,9 @@ export const AboutSection = () => {
                 Who I am
               </h2>
               <p className="text-md font-open-sans mt-4 mb-16 leading-7">
-                Hi, I'm Jessica a frontend developer who is passionate about
-                building accessible and scalable stuff.
+                I'm a frontend developer based in Stockholm. I build websites
+                for Episerver and Umbraco by day and apps in angular/react by
+                night.
               </p>
               <SkillsList />
               <div className="mt-16">
