@@ -37,7 +37,7 @@ module.exports = {
     padding: ['responsive', 'last'],
     flexDirection: ['responsive'],
     textColor: ['hover', 'group-hover'],
-    borderColor: ['hover', 'group-hover'],
+    borderColor: ['hover', 'group-hover', 'focus'],
     transitionProperty: ['motion-reduce']
   },
   plugins: [],
