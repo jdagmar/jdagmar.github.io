@@ -7,7 +7,7 @@ export const AboutSection = () => {
   return (
     <section id="about" className="anchor-stop">
       <div className="bg-swamp-green-200">
-        <div className="max-w-7xl m-auto pb-12 pt-24 px-4 lg:px-10">
+        <div className="max-w-7xl m-auto pb-20 pt-24 px-4 lg:px-10">
           <SectionHeading text="About" />
           <div className="flex justify-between lg:flex-row flex-col-reverse mt-20 w-full my-4">
             <div className="max-w-3xl">
@@ -21,7 +21,7 @@ export const AboutSection = () => {
               </p>
               <SkillsList />
               <div className="mt-16">
-                <h2 className="tracking-wide font-montserrat text-3xl font-black mb-4">
+                <h2 className="tracking-wide font-montserrat text-3xl font-black mb-5">
                   Where you can find me
                 </h2>
                 <Link
