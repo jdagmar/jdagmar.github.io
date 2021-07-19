@@ -15,11 +15,7 @@ export const ProjectCards = () => {
             <p className="font-open-sans my-2 max-w-xl leading-7 mb-6">
               {project.description}
             </p>
-            <div
-              className={`mb-10 ${
-                i % 2 === 1 ? 'text-tangerine-500' : 'text-swamp-green-500'
-              }`}
-            >
+            <div className="mb-10 text-tangerine-500">
               {project.topics.map((topic, i, topics) => (
                 <span key={i}>
                   <span className="font-montserrat uppercase tracking-wider text-gray-700 text-sm">
