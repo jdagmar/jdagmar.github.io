@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { ProjectCards } from './ProjectCards';
 import { SectionHeading } from '.';
 

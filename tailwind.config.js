@@ -3,7 +3,7 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     fontFamily: {
-      montserrat: ['Montserrat'],
+      'maven-pro': ['Maven Pro', 'sans-serif'],
       'open-sans': ['Open Sans']
     },
     extend: {

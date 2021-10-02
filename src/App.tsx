@@ -4,8 +4,8 @@ import { Header, ProjectSection, AboutSection, IntroHero } from './components/';
 export const App = () => {
   return (
     <>
-      <Header />
       <IntroHero />
+      <Header />
 
       <main>
         <ProjectSection />

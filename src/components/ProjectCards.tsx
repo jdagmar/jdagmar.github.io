@@ -9,7 +9,7 @@ export const ProjectCards = () => {
       <div className="flex justify-between flex-col sm:flex-row">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="tracking-wide font-montserrat text-4xl font-black mb-5">
+            <h3 className="tracking-wide font-maven-pro text-4xl font-black mb-5">
               {project.name}
             </h3>
             <p className="font-open-sans my-2 lg:w-10/12 leading-7 mb-6">
@@ -18,7 +18,7 @@ export const ProjectCards = () => {
             <div className="mb-10 text-tangerine-500">
               {project.topics.map((topic, i, topics) => (
                 <span key={i}>
-                  <span className="font-montserrat uppercase tracking-wider text-gray-700 text-sm sm:text-xs">
+                  <span className="font-maven-pro uppercase tracking-wide text-gray-700 text-sm sm:text-xs">
                     {topic}
                   </span>
                   {topics.length - 1 !== i && (

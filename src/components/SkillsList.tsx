@@ -5,7 +5,7 @@ import { iconHelper } from '../helpers/iconHelper';
 export const SkillsList = () => {
   const skillSet = skills.map((skill, i, skills) => (
     <li
-      className="tracking-wider font-montserrat text-sm leading-7 uppercase"
+      className="tracking-wide font-maven-pro text-sm leading-7 uppercase"
       key={i}
     >
       {skill}
@@ -19,7 +19,7 @@ export const SkillsList = () => {
 
   return (
     <>
-      <h2 className="tracking-wide font-montserrat text-3xl font-black">
+      <h2 className="tracking-wide font-maven-pro text-3xl font-black">
         What I can do
       </h2>
       <ul className="flex flex-wrap text-center my-4">{skillSet}</ul>

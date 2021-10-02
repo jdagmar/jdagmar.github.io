@@ -11,7 +11,7 @@ export const AboutSection = () => {
           <SectionHeading text="About" />
           <div className="flex justify-between lg:flex-row flex-col-reverse mt-20 w-full my-4">
             <div className="max-w-3xl">
-              <h2 className="tracking-wide font-montserrat text-3xl font-black">
+              <h2 className="tracking-wide font-maven-pro text-3xl font-black">
                 Who I am
               </h2>
               <p className="text-md font-open-sans mt-4 mb-16 leading-7">
@@ -21,7 +21,7 @@ export const AboutSection = () => {
               </p>
               <SkillsList />
               <div className="mt-16">
-                <h2 className="tracking-wide font-montserrat text-3xl font-black mb-5">
+                <h2 className="tracking-wide font-maven-pro text-3xl font-black mb-5">
                   Where you can find me
                 </h2>
                 <Link
