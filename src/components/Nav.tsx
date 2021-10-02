@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Link } from './Link';
 
 export const Nav = () => {
@@ -20,8 +19,8 @@ export const Nav = () => {
   ));
 
   return (
-    <nav className="text-center w-full">
-      <ul className="flex justify-end">{navLinks}</ul>
+    <nav className="w-full">
+      <ul className="flex justify-center">{navLinks}</ul>
     </nav>
   );
 };
