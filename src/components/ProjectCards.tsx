@@ -5,7 +5,7 @@ import { Link } from './Link';
 
 export const ProjectCards = () => {
   const cards = projects.map((project, i) => (
-    <li className={`mb-40 p-14 bg-gray-100`} key={project.name}>
+    <li className={`mb-16 p-14 bg-gray-100`} key={project.name}>
       <div className="flex justify-between flex-col sm:flex-row">
         <div className="flex flex-col justify-between">
           <div>
@@ -49,6 +49,6 @@ export const ProjectCards = () => {
     </li>
   ));
   return (
-    <ul className="mt-32 flex-1 justify-center flex-wrap gap-4">{cards}</ul>
+    <ul className="mt-20 flex-1 justify-center flex-wrap gap-4">{cards}</ul>
   );
 };

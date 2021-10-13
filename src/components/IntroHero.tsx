@@ -1,7 +1,7 @@
 export const IntroHero = () => {
   return (
     <div className="bg-swamp-green-200">
-      <div className=" py-48 max-w-7xl m-auto px-4 lg:px-6 text-center">
+      <div className="py-40 max-w-7xl m-auto px-4 lg:px-6 text-center">
         <h1 className="font-black  font-maven-pro text-swamp-green-600 text-3xl lg:text-5xl mb-6">
           Jessica Gustavsson
         </h1>
