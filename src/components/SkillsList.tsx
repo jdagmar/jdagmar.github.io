@@ -20,7 +20,7 @@ export const SkillsList = () => {
   return (
     <>
       <h2 className="tracking-wide font-maven-pro text-3xl font-black">
-        What I can do
+        Skillset
       </h2>
       <ul className="flex flex-wrap text-center my-4">{skillSet}</ul>
     </>

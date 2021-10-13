@@ -1,21 +1,21 @@
 [
   {
     "name": "Random animal",
-    "description": "For those days when you just really need to see some cute animals! Random animal, or really random cat or dog, is an app where you can get a random picture, gif or video of a cat or dog.",
+    "description": "Simple app utilizing two different API's to fetch random pictures of cat and dogs. Primary goal was to get familiar with styled components.",
     "repo": "https://github.com/jdagmar/random-animal",
     "website": "https://jdagmar.github.io/random-animal/",
     "topics": ["React", "Styled components", "TypeScript"]
   },
   {
     "name": "Weather App",
-    "description": "What better way to learn a framework than to build an weather app! In this app you can search for a city and fetch the current weather.",
+    "description": "What better way to learn a new framework than to build an weather app! The app uses the Open Weather Map API to fetch current weather.",
     "repo": "https://github.com/jdagmar/weather-app",
     "website": "https://jdagmar.github.io/weather-app/",
     "topics": ["Angular", "Sass", "TypeScript", "Linea Iconset", "OpenWeatherMap"]
   },
   {
     "name": "Budget Planner",
-    "description": "Still scribbling down your monthly budget on paper? Try budget planner, enter you'r income and monthly expenses and the app sums up everyhing and alerts if you'r exceeding your budget.",
+    "description": "An app where you can enter your income and expenses. Built as an homage to my very first code project ever!",
     "repo": "https://github.com/jdagmar/budget-planner",
     "website": "https://jdagmar.github.io/budget-planner/",
     "topics": ["React", "Tailwind CSS", "TypeScript"]
